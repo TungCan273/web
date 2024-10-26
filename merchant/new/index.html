@@ -1,0 +1,58 @@
+<head>
+  <title>Shopee, Seller page</title>
+  <link rel="stylesheet" href="../../globals.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div>
+      <a href="../index.html">
+        <img src="https://storage.googleapis.com/ops-shopee-files-live/live/affiliate-blog/2019/05/logo-full-white.png"
+          alt="Shopee logo white" width="200" />
+      </a>
+    </div>
+    <nav>
+      <h1>Trang người bán</h1>
+    </nav>
+  </header>
+  <main>
+    <h1>Thêm sản phẩm mới</h1>
+    <form>
+      <div>Thông tin chung</div>
+      <div>
+        <input id="name" type="text" placeholder="Tên sản phẩm" />
+      </div>
+      <div>
+        <textarea id="description" rows="4" cols="50">Mô tả sản phẩm</textarea>
+      </div>
+      <div>
+        <input id="image" type="text" placeholder="URL Ảnh, cách nhau bởi dấu ;">
+      </div>
+      <div>
+        <input id="stock" type="number" placeholder="Số lượng trong kho">
+      </div>
+      <div>Giá</div>
+      <div>
+        <input id="price" type="number" placeholder="Giá gốc (VND)" step="10000">
+      </div>
+      <div>
+        <input id="discount" type="number" placeholder="Giảm giá (VND)" step="10000">
+      </div>
+      <div>Ưu đãi voucher</div>
+      <div>
+        <div id="voucher-container" style="display: inline-block;">
+          <div>
+            <input name="voucher" type="number" step="5" max="100" placeholder="Số phần trăm (%)">
+            <input name="voucher" type="number" step="10000" placeholder="Tối đa (VND)">
+          </div>
+        </div>
+        <button id="add-voucher-btn">Thêm voucher</button>
+      </div>
+      <button id="submit-btn">Thêm</button>
+    </form>
+  </main>
+</body>

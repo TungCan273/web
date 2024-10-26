@@ -1,0 +1,11 @@
+h1 {
+  color: rgb(236, 111, 67);
+  text-align: center;
+}
+
+.product .name {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; 
+  overflow: clip;
+}

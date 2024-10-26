@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0.5rem 0;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  gap: 1rem;
+}
+
+.left-body {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 1rem;
+}
+
+.left-body-wrapper {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.right-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-body .card {
+  position: sticky;
+  top: 12px;
+}
+
+.widget-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  background: white;
+  position: sticky;
+  top: 12px;
+  gap: 16px;
+}
+
+.product-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+  overflow: hidden;
+  gap: 16px;
+}
+
+.product-main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: white;
+  padding: 1rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description-container img {
+  width: 100%;
+  height: auto;
+}
+
+.price-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.original-price {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.price {
+  color: rgb(236, 111, 67);
+  font-weight: bold;
+  font-size: 3rem!important;
+}
+
+.profile-badge {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.profile-badge img {
+  border-radius: 50%;
+  width: 30px;
+}
+
+.voucher-badge {
+  color: #ee4d2d;
+  text-transform: uppercase;
+  border-radius: 2px;
+  background-color: rgba(255,87,34,.1);
+  padding: 3px 6px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.config {
+  background: none;
+  color: black;
+  border: 1px solid rgb(236, 111, 67);
+  cursor: pointer;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 120px;
+  overflow: hidden;
+  border: 1px solid gray;
+}
+
+input {
+  padding: 1rem;
+  font-size: 1rem;
+}

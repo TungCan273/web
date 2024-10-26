@@ -1,0 +1,25 @@
+.main-container {
+  margin: 5rem 10rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid rgb(236, 111, 67);
+  border-radius: 1rem;
+}
+
+form input {
+  padding: 1rem;
+}
+
+form a {
+  color: rgb(236, 111, 67);
+}
+
+form .alert {
+  color: red,
+}
